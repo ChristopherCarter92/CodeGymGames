@@ -1,0 +1,76 @@
+2021-02-06 15:28:03 INFO  ProjectStartupHandler.runActivity(72) - ---------- Project opened ----------
+2021-02-06 15:28:03 INFO  ProjectStartupHandler.runActivity(73) - ---------- Version 3.44 ----------
+
+2021-02-06 15:28:03 INFO  ProjectStartupHandler.setAutoscrolls(337) - Autoscrolls successfully set
+2021-02-06 15:28:03 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(581) - The session is not set in the property file.
+2021-02-06 15:28:03 INFO  ApacheHttpClient.login(247) - Waiting for server response.
+2021-02-06 15:28:03 INFO  ApacheHttpClient.login(251) - responseCode = 200
+2021-02-06 15:28:03 INFO  ApacheHttpClient.login(274) - JSESSIONID OK
+2021-02-06 15:28:03 INFO  ApacheHttpClient.refreshUserInfo(302) - responseCode = 200
+2021-02-06 15:28:03 INFO  ApacheHttpClient.refreshUserInfo(308) - User information received.
+2021-02-06 15:28:03 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2021-02-06 15:28:03 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2021-02-06 15:28:14 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:28:14 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
+2021-02-06 15:28:22 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:28:22 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:28:22 INFO  ApacheHttpClient.getTaskTemplateInfo(350) - responseCode = 200
+2021-02-06 15:29:03 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2021-02-06 15:30:03 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2021-02-06 15:30:13 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:30:14 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2021-02-06 15:30:15 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2021-02-06 15:30:15 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2021-02-06 15:30:19 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:30:19 WARN  PluginUtil.getCurrentTask(74) - Error while retrieving the task key.
+2021-02-06 15:30:19 WARN  PluginUtil.getCurrentDirectory(105) - Error while getting the current directory.
+2021-02-06 15:30:19 WARN  PluginUtil.getCurrentDirectory(105) - Error while getting the current directory.
+2021-02-06 15:30:19 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2021-02-06 15:30:20 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2021-02-06 15:30:21 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2021-02-06 15:30:22 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:30:22 WARN  PluginUtil.getCurrentTask(74) - Error while retrieving the task key.
+2021-02-06 15:30:22 WARN  PluginUtil.getCurrentDirectory(105) - Error while getting the current directory.
+2021-02-06 15:30:22 WARN  PluginUtil.getCurrentDirectory(105) - Error while getting the current directory.
+2021-02-06 15:30:22 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2021-02-06 15:30:23 INFO  ApacheHttpClient.completed(28) - responseCode = 200
+2021-02-06 15:30:23 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2021-02-06 15:30:31 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:30:31 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
+2021-02-06 15:30:50 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:30:50 INFO  ApacheHttpClient.getFilteredTasks(333) - responseCode = 200
+2021-02-06 15:30:55 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:30:55 INFO  ApacheHttpClient.getTaskTemplateInfo(350) - responseCode = 200
+2021-02-06 15:31:03 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2021-02-06 15:32:03 INFO  ApacheHttpClient.sendEvent(527) - responseCode = 200
+2021-02-06 15:32:20 INFO  ProjectStartupHandler.projectClosing(153) - ---------- Project closed ----------
+
+2021-02-06 15:32:20 INFO  ApacheHttpClient.getTask(480) - responseCode = 200
+2021-02-06 15:32:20 INFO  PluginProjectService.dispose(42) - PluginProjectService disposed.
+2021-02-06 15:35:01 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:01 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:01 INFO  PluginProjectService.<init>(34) - PluginProjectService for 8.Games initiated.
+2021-02-06 15:35:01 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:02 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:02 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:02 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:03 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:03 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:03 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:07 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:07 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:07 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:35:08 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:36:31 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:36:46 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:36:52 ERROR PluginUtil.getUserPropertyFromProjectByKey(320) - Error while using a key to get a property from properties file. : java.lang.NullPointerException
+2021-02-06 15:36:52 INFO  ApacheHttpClient.getWebResourceAsStream(494) - responseCode = 200
+2021-02-06 15:36:59 INFO  PluginProjectService.dispose(42) - PluginProjectService disposed.

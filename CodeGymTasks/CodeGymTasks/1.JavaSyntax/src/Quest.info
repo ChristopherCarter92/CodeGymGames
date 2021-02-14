@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CodeGym</title>
+    <style>
+        mark {
+            padding: .1em .3em;
+            color: #fff;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+            font-size: 1em;
+            font-family: Menlo, Monaco, Consolas, Courier New, Ubuntu Mono, monospace;
+            border-radius: 3px;
+        }
+
+        .light-content {
+            font-size: 15px;
+            line-height: 1.62;
+            overflow-wrap: break-word;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #151f33;
+        }
+
+        .dark-content {
+            font-size: 15px;
+            line-height: 1.62;
+            overflow-wrap: break-word;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background: #1F2023;
+        }
+
+        .light-content .text-corporate {
+            color: #f80 !important;
+        }
+
+        .dark-content .text-corporate {
+            color: #ff7337 !important;
+        }
+
+        .light-content mark.green {
+            background-color: #41a444;
+        }
+
+        .dark-content mark.green {
+            background-color: #45aa4c;
+        }
+
+        .light-content mark.orange {
+            background-color: #faa033;
+        }
+
+        .dark-content mark.orange {
+            background-color: #ff7337;
+        }
+
+        .light-content mark.blue {
+            background-color: #3a5fa5;
+        }
+
+        .dark-content mark.blue {
+            background-color: #4798cf;
+        }
+
+        .light-content .text-red {
+            color: red !important;
+        }
+
+        .dark-content .text-red {
+            color: #f14f4c !important;
+        }
+    </style>
+</head>
+<body class="dark-content">
+<div style="padding: 10px 30px">
+    <h3>Java Syntax</h3>
+<p><strong>The Java Syntax quest</strong> was developed at the secret <strong>Code<span class="text-corporate">Gym</span></strong> center. It consists of <strong>10 levels</strong> devoted to the fundamentals of the <strong>Java</strong> language. It can be mastered even by someone who has never programmed before. You will learn about <strong><span class="text-corporate">classes</span></strong>, <mark class="green">objects</mark>, <mark class="orange">methods</mark>, and <mark class="blue">variables</mark>. You will study <span class="text-red">basic data types</span>, <span class="text-red">arrays</span>, <span class="text-red">conditional statements</span>, and <span class="text-red">loops</span>. Take a quick look at <strong>collections</strong> and <strong>OOP basics</strong> (<em>a serious study of these topics will begin</em> in <strong>Quest 4</strong>), and start working in <em><strong>IntelliJ IDEA</strong></em>, a popular development environment <em>used by programmers all over the world!</em></p>
+<p>But most importantly, you will complete a lot of tasks. Tasks play a central role at <strong>Code<span class="text-corporate">Gym</span></strong>. And virtual mentors will help you deal with mistakes (<em>Your solutions are checked instantly</em>).</p>
+</div>
+</body>
+</html>

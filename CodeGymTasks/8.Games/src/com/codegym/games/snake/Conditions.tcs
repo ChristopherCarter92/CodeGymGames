@@ -1,0 +1,80 @@
+taskKey="com.codegym.games.snake.part12"\n\nSnake (Part 12/20)
+
+Now we have an apple and a snake that can move. Now we'll implement the logic to make them interact. To start, add an apple variable to
+the SnakeGame class, and initialize its coordinates to (5, 5) when the game is created. And, draw an apple.
+
+Rewrite the Snake class's move() method. Now it should take an apple as an argument. And if the snake eats an apple, the apple's
+state should be set to dead, and the snake's size should increase by 1 element.
+
+
+Requirements:
+1.	The SnakeGame class must have a private Apple apple field.
+2.	In the createGame() method, the apple field must be initialized with a new Apple object with arguments (5, 5) before the drawScene() is called.
+3.	In the drawScene() method, you must call the draw(Game) method on the apple after drawing the snake. Pass this to the method.
+4.	The Snake class must not have a public void move() method.
+5.	The Snake class must have a public void move(Apple apple) method.
+6.	In the move(Apple) method, if the new snake head&#39;s coordinates match the apple&#39;s coordinates, you need to set isAlive=false on the apple and not remove the snake&#39;s tail.
+7.	Call the move(Apple) method in the SnakeGame class&#39;s onTurn(int) method.
+
+
+Snake (Part 11/20)
+
+Let's add the ability to control our snake. To handle key presses, override the Game parent class's onKeyPress(Key) method. Depending on which key is
+pressed, set the appropriate direction of snake movement. Bear in mind that a snake cannot instantly turn 180 degrees.
+
+
+
+Snake (Part 10/20)
+
+Now you need to combine the work of the createNewHead() and removeTail() methods. The move() method is a good place to do this.
+
+Add a check to see whether the snake has gone beyond the boundaries of the playing field. If the new head is beyond the boundaries of the playing field, set the snake's state to dead.
+
+After moving the snake, you need to clear from the playing field any snake segments that no longer exist. To do this, the drawScene() method should not only
+change the color of cells, but also assign an empty string to those cells.
+
+
+
+Snake (Part 9/20)
+
+Moving the snake is very simple: in a cell next to the head, a new head is created, and the last element (tail) of the snake is removed.
+
+In the Snake class, implement a createNewHead() method that creates and returns a new GameObject. The new
+GameObject must be created next to the element that currently contains the snake head (element with index 0 in snakeParts).
+The new GameObject is created in the direction of the snake's movement (direction field).
+For example:
+- if the snake is moving to the left, new GameObject(headX-1, headY);
+- if the snake is moving down, new GameObject(headX, headY + 1)
+Here, headX is the x coordinate of the snake's head, and headY is the y coordinate of the snake's head.
+
+Note: coordinates can be negative and/or be beyond the boundaries of the playing field. This is okay for now. We'll fix it later.
+
+Create and implement a removeTail() method in the Snake class.
+
+
+
+Snake (Part 8/20)
+
+The snake must move with every turn. A turn takes a certain amount of time, which you can set.
+
+To implement the logic for moving the snake, create a
+move() method in the Snake class. Override the onTurn(int) method of the parent of the SnakeGame class. Everything that should happen in the game during one turn is
+described here. After moving the snake, don't forget to redraw the playing field.
+
+To set the duration of a turn, create a turnDelay variable. The game will start at a speed of 300ms/turn. Set the duration of a turn
+when the game is created.
+
+
+
+Snake (Part 7/20)
+
+An object on the playing field can have one of two states: it can be alive (isAlive=true) or dead (isAlive=false).
+For example, if the snake hits the edge of the playing field, it dies. The same thing happens to an apple when it is eaten by the snake. To store object state,
+create a boolean isAlive variable in the Apple and Snake classes. Modify the logic for drawing a snake so that dead snakes are red.
+
+The snake can move in one of four directions. To indicate these directions, create a Direction enum with UP, RIGHT, DOWN, and LEFT fields.
+And in the Snake class, create a direction field, which will store the current direction of movement. Let the snake initially move to the left. The
+snake's direction will be changed by the setDirection(Direction) method. Create it.
+
+
+
