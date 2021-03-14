@@ -9,14 +9,19 @@ public class Snake {
 
 
     private List<GameObject> snakeParts = new ArrayList<>();
-    private static final String HEAD_SIGN = "/uD83D/uDC7E";
-    private static final String BODY_SIGN = "/u26AB";
+    private static final String HEAD_SIGN = "\uD83D\uDC7E";
+    private static final String BODY_SIGN = "\u26AB";
     public boolean isAlive = true;
     private Direction direction = Direction.LEFT;
 
 
     public void setDirection(Direction direction) {
-        
+        if ((this.direction == Direction.LEFT || this.direction == Direction.RIGHT) && snakeParts.get(0).x == snakeParts.get(1).x) {
+            return;
+        }
+        if ((this.direction == Direction.UP || this.direction == Direction.DOWN) && snakeParts.get(0).y == snakeParts.get(1).y) {
+            return;
+        }
         if ((direction == Direction.UP && this.direction == Direction.DOWN)
                 || (direction == Direction.LEFT && this.direction == Direction.RIGHT)
                 || (direction == Direction.RIGHT && this.direction == Direction.LEFT)
@@ -25,10 +30,18 @@ public class Snake {
         this.direction = direction;
     }
 
+    public boolean checkCollision(GameObject gameObject) {
+        for (GameObject part : snakeParts) {
+            if (part.x == gameObject.x && part.y == gameObject.y) {
+                return true;
+
+            }
+        }
+        return false;
+    }
 
 
-
-    public void move() {
+    public void move(Apple apple) {
         GameObject newHead = createNewHead();
         if (newHead.x >= SnakeGame.WIDTH
                 || newHead.x < 0
@@ -37,8 +50,17 @@ public class Snake {
             isAlive = false;
             return;
         }
+        if (checkCollision(newHead)) {
+            isAlive = false;
+            return;
+        }
         snakeParts.add(0, newHead);
-        removeTail();
+
+        if (newHead.x == apple.x && newHead.y == apple.y) {
+            apple.isAlive = false;
+        } else {
+            removeTail();
+        }
     }
 
     public Snake(int x, int y) {
@@ -56,6 +78,9 @@ public class Snake {
         }
 
 
+    }
+    public int getLength(){
+        return snakeParts.size();
     }
 
     public GameObject createNewHead() {

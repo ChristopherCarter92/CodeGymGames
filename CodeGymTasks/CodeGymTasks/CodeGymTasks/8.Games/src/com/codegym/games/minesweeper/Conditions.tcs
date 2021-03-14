@@ -1,0 +1,30 @@
+taskKey="com.codegym.games.minesweeper.part01"\n\nMinesweeper (Part 1/16)
+
+Let's write the entertaining Minesweeper game.
+Rules of the game:
+1.  The playing field is divided into adjacent cells (squares), some of which contain "mines".
+2.  The objective of the game is to clear the field, i.e. reveal all cells that don't contain mines.
+3.  If a cell with a mine is revealed, the game is lost. The mines are placed randomly.
+4.  If a revealed cell doesn't have a mine, a number appears in it, indicating how many "mined" cells are adjacent to the
+revealed cell. You can use these numbers to calculate the location of mines.
+5.  If the adjacent cells also do not contain mines, an "unmined" region is revealed up to
+cells that do have numbers.
+6.  Cells that you believe to contain mines can be flagged so you don't accidentally reveal them. The number of flags is equal to
+the number of mines on the game board.
+7.  If "unmined" cells are revealed, then the game is won.
+
+Now let's start implementing the game:
+To begin, create a MinesweeperGame class, which will implement the logic of the game. This class must
+inherit the Game class, which is part of CodeGym's cool "game engine".
+This and other engine classes are located in the com.codegym.engine.cell package. To use them,
+the MinesweeperGame class must include the following import statement:
+import com.codegym.engine.cell.*;
+If you did everything right, you will see the playing field when you start the application.
+
+
+Requirements:
+1.	There must be a public MinesweeperGame class.
+2.	The MinesweeperGame class must inherit the Game class.
+3.	The MinesweeperGame class must have a statement that imports the entire contents of the com.codegym.engine.cell package.
+
+
